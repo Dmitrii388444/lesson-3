@@ -9,8 +9,8 @@ text=tfile.read()
 
 str = 'text'
 
-# str = str.replace(',', '').replace('.', '').replace(';','').replace('—','').replace('«','').replace('»','').replace('?','').replace('!','').replace('(','').replace(')','')
-# print(str)
+ str = str.replace(',', '').replace('.', '').replace(';','').replace('—','').replace('«','').replace('»','').replace('?','').replace('!','').replace('(','').replace(')','')
+ print(str)
 
 #################
 
@@ -28,14 +28,14 @@ print(answer3)
 # 4 получить из list пункта 3 dict, ключами которого являются слова, а значениями их количество появлений в тексте;
 #################
 answer4 = {}
-dict = answer3 * 1
-for i in list(dict):
+tdict = answer3 * 1
+for i in list(tdict):
     counts = 0
-    while i in list(dict):
-        if i in list(dict):
-            # print(list(str5))
+    while i in list(tdict):
+        if i in list(tdict):
+
             counts += 1
-            dict.remove(i)
+            tdict.remove(i)
             answer4[i] = counts
 print(answer4)
 #################
